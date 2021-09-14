@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes wide{
+    from{
+        width: 0px;
+        opacity: 0;
+    }
+    to{
+        width: 257px;
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+}
+
+.header {
+    color: #fff;
+    padding: 20px;
+    background-color: #AF7EEB;
+    border-radius: 2px;
+    box-shadow: 0px 10px 20px #cccccc;
+}
+
+.icon-menu {
+    float: left;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.todolist {
+    position: relative;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 10px 20px #cccccc;
+}
+
+.todolist-item {
+    position: relative;
+    border: none;
+    margin-left: 60px;
+    padding: 15px 0px;
+    cursor: pointer;
+    margin-bottom: -1px;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.todolist-item::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: -40px;
+    top: 41%;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.todolist-item.checked:before {
+    background-color: #AF7EEB;
+    border: none;
+}
+
+.trash-icon {
+    display: block;
+    float: right;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    color: #000 !important;
+    padding: 5px;
+}
+
+.add-todo {
+    display: block;
+    color: #fff;
+    position: absolute;
+    padding: 10px 0px;
+    width: 150px;
+    background-color: #AF7EEB;
+    border-radius: 14px;
+    bottom: -20px;
+    left: 40%;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #cccccc;
+    animation: fade linear .2s;
+}
+
+.plus-icon {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.add-input {
+    display: none;
+    position: absolute;
+    padding: 10px 40px;
+    width: 257px;
+    top: 92%;
+    left: 35%;
+    color: #fff;
+    border-radius: 14px;
+    box-shadow: 0px 10px 20px #cccccc;
+    background-color: #AF7EEB;
+    border: none;
+    outline: none;
+    animation: wide linear .3s;
+}
+
+.checked {
+    text-decoration: line-through #AF7EEB;
+    color: #cccccc;
+}
