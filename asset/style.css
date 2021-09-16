@@ -124,6 +124,11 @@
     animation: wide linear .3s;
 }
 
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
 .checked {
     text-decoration: line-through #AF7EEB;
     color: #cccccc;
