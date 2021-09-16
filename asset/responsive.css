@@ -1,0 +1,28 @@
+@media only screen and (max-width: 767px) {
+    /* For Mobile */
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header {
+        padding: 5px 10px;
+    }
+
+    .header_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .add-todo {
+        width: 50%;
+        left: 25%;
+    }
+
+    .add-input {
+        left: 10%;
+        width: 80%;
+    }
+}
