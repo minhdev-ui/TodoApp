@@ -79,7 +79,7 @@
     border: none;
 }
 
-.trash-icon {
+.trash-icon, .edit-icon {
     display: block;
     float: right;
     cursor: pointer;
